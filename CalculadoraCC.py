@@ -1,6 +1,12 @@
+# Bienvenida e instrucciones.
+
 print("¡Hola! Soy una calculadora de licencias Creative Commons. Mi función es decirte si podés realizar una obra derivada a partir de una o más obras originales. Vos me tenés que indicar la licencia de la obra u obras originales. Yo te digo si podés hacer la obra derivada y, en ese caso, qué licencia o licencias podés colocarle a tu obra derivada.\n---")
 
+# Lista de licencias para chequear input.
+
 licencias = ["dominiopublico", "by", "bysa", "bynd", "bync", "byncsa", "byncnd"]
+
+# Declaración de licencias para calcular compatibilidad.
 
 dp = "dominiopublico"
 by = "by"
