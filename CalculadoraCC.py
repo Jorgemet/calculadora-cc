@@ -25,6 +25,8 @@ def calculadora():
                 licencia_input = input("Ingresá la licencia de la %dª obra: " % (n + 1))
             else:
                 licencia_input = input("Ingresá la licencia de la %dª obra o tipeá 'Listo': " % (n + 1))
+            
+            # Normalización de input
             licencia_input = licencia_input.strip()
             licencia_input = licencia_input.lower()
             licencia_input = licencia_input.replace(" ", "")
