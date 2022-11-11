@@ -51,10 +51,10 @@ def calculadora():
             print("\033[1m""- Estas obras no se pueden combinar en una obra derivada, dado que una o más de las obras tienen una licencia ND, que no admite obras derivadas.""\033[0m")
             ok = False
         if bysa in lista_de_licencias and byncsa in lista_de_licencias:
-            print("\033[1m""- Las obras con licencias CCBY-SA y CCBY-NC-SA no se pueden combinar entre sí, dado que ambas, por su parte, exigen que la obra derivada tenga una licencia igual.""\033[0m")
+            print("\033[1m""- Las obras con licencias CC BY-SA y CC BY-NC-SA no se pueden combinar entre sí, dado que ambas, por su parte, exigen que la obra derivada tenga una licencia igual.""\033[0m")
             ok = False
         if bync in lista_de_licencias and bysa in lista_de_licencias:
-            print("\033[1m""- Las obras con licencias CCBY-NC y CCBY-SA no se pueden combinar entre sí, dado que la licencia CCBY-NC no permite los usos comerciales y la licencia CCBY-SA exige que la obra derivada tenga una licencia igual que permite los usos comerciales.""\033[0m")
+            print("\033[1m""- Las obras con licencias CC BY-NC y CC BY-SA no se pueden combinar entre sí, dado que la licencia CC BY-NC no permite los usos comerciales y la licencia CC BY-SA exige que la obra derivada tenga una licencia igual que permite los usos comerciales.""\033[0m")
             ok = False
         
         if ok is False:
@@ -81,6 +81,5 @@ def calculadora():
                 print("¡Hasta luego!")
                 quit()
 
-repetir = 1
-while repetir == 1:        
+while True: 
     calculadora()
