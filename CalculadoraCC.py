@@ -81,5 +81,5 @@ def calculadora():
                 print("¡Hasta luego!")
                 quit()
 
-while True: 
+if __name__ == "__main__":
     calculadora()
